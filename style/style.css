@@ -1,0 +1,443 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+a
+{
+    list-style: none;
+    text-decoration: none;
+    color: #d9d9db;
+    margin: 1vh;
+}
+
+a:hover
+{
+    list-style: none;
+    text-decoration:underline 3px; 
+
+    color: #d9d9db;
+}
+
+footer
+{
+    display: flex;
+    background-color:#121210;
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p 
+{   
+    text-align: center; 
+    color: #d9d9db;
+    margin: 1vh;
+}
+
+
+
+li, ul 
+    {
+        list-style: none;
+        list-style-type: none;
+    }
+
+/*Hoja de estilo de la pagina de inicio*/
+
+
+    header
+    {
+        background-color: #121210;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding: 25px;
+        align-items: center;
+        width: 100%;
+        top:0; 
+        gap: 2rem;  
+    } 
+
+    .imagenheader
+    {   
+       width: 80px;   
+    }
+    
+    /*Primer breakpoint 480px aplicado al header*/
+
+    @media (min-width:480px)
+    {
+        header
+        {   
+            display: flex;
+            flex-direction: row;
+        }
+        .imagenheader
+        {   
+            width: 60px;   
+        }
+
+    }
+
+    
+    
+    .nav-menu
+    {
+        padding-left: 10px;
+        flex-direction: row;
+    }
+    
+    ul
+    {
+        display: inline;
+        margin-left: 5px;
+    }
+    
+
+    .primerarticulo
+    {   
+        display:flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        background-image: url("../img/background1.jpg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        text-align: center;
+        gap:2rem;
+    }
+
+
+.primerarticulo h1
+    {
+        font-family: roboto;
+        font-size: 48px;
+        margin-bottom: -1px; 
+        font: style 1px;
+        font-weight: 600;
+     
+    }
+
+
+.btn-primary 
+    {
+        
+        padding: 10px 30px;
+        background-color: #4a362f;
+        color: #d9d9db;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.espacioboton
+    {
+        display:flex;
+        margin-top: 25px;
+        gap: 25px;
+    }
+
+.redes-sociales
+    {
+        margin-top: 25px;
+        display: flex;
+        gap:25px;
+    }
+
+/*Hoja de estilo de hoja acerca de:*/
+
+    .acercade
+        {   
+            
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+            gap:2rem;
+            background-color: #4a362f;
+            
+        }
+    .acercade img
+    {
+        width: 150px;
+    }
+    .acercade h1
+        {
+        color: azure;
+        padding:25px;
+        }
+
+    .acercade p
+        {
+        margin: auto 10px;
+        margin-bottom: 15px;
+        color: azure;
+        text-align:center;
+        }
+
+        @media (min-width:768px)
+        {
+            .acercade
+            {
+                flex-direction:row;
+                height: 100vh;
+            }
+            .acercade p
+            {
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                gap: 5px;
+                margin-bottom: 15px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+
+
+/*Hoja de estilos para la pagina del resumen*/
+
+/*primer articulo de la pagina resumen*/
+
+    .articulo1
+    {
+        display:flex;
+        flex-direction: column;
+        padding: 2rem;       
+    } 
+
+    @media (min-width: 768px)
+        
+    {
+        .seccion1
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+    
+        .articulo1
+        {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            gap:10px;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        
+    }
+            
+    .seccion1 
+    {
+      margin-left:15px;
+    }
+
+    .skill1
+    {
+        display: flex;
+        gap:2rem;
+        align-items: center;
+        padding:5px;          
+    }
+
+    .skill2
+    {
+        display: flex;
+        gap:2rem;
+        align-items: center;
+        padding:5px;          
+    }
+
+    .skill3
+    {
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        padding:5px; 
+        justify-content: space-between;
+        flex-direction: row;         
+        flex-wrap: wrap;
+    }
+
+    .articulo1 h2
+    {
+        text-align: center;
+        padding: 15px;
+    }
+   
+    @media (min-width: 768px)
+    {
+        .articulo1 h2
+        {
+            padding: 0;
+        }
+    }
+ 
+
+    .articulo1 h4
+    {
+        padding: 15px;
+    }
+
+    .articulo1 p
+    {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .articulo1 li
+    {
+      text-align: center;
+      justify-content: center;
+    }
+  
+/*segundo articulo Pagina de resumen*/
+
+    .articulo2
+    {
+        display:flex;
+        flex-direction: column; 
+        padding-bottom: 15px; 
+        padding: 2rem;       
+    }
+
+    
+
+    .articulo2 h2
+    {
+        text-align: center;         
+    }
+
+    /*etiqueta realizada para el espaciado de el titulo de educación*/
+    
+   .titulo2
+    {
+        padding-top: 2rem;
+    }
+
+    .articulo2 h4
+    {
+        padding: 10px;
+    }
+
+    .articulo2 p
+    {
+        padding: 10px;
+        justify-content: center;
+    }
+    @media (min-width: 768px)
+        
+    {
+       
+        .articulo2
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .titulo2
+        {
+            padding: 0px;
+            top: 0px;
+            margin: 0px;
+        }
+      
+    }
+/* 
+    @media (min-width: 768px)
+        
+    {
+        .articulo2
+        {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            gap:10px;
+            padding: none;
+            margin: none;
+        }
+    
+    } */
+
+/*tercer articulo Pagina de resumen*/
+
+    .articulo3
+    {
+        display:flex;
+        flex-direction: column; 
+        padding-bottom: 15px; 
+        padding: 2rem;  
+    }
+
+    .articulo3 p
+    {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .articulo3 h2
+    {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+   
+    @media (min-width: 768px)
+        
+    {
+        .articulo3
+        {
+            height: 100%;
+        }
+       
+        .seccion3
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .articulo3 h2
+        
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+    }
+
+      
+    
+    
+    
+    .hobbie
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:2rem;
+        justify-content: center;
+    }
+
+    h2
+    {
+        margin-bottom: 5px;
+        margin-top:5px;
+    }
