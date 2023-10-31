@@ -1,55 +1,37 @@
 @charset "UTF-8";
+/* Seteo del sistema*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Barra de navegación*/
 li, ul {
   list-style: none;
   list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+li:hover, ul:hover {
+  list-style: none;
+  text-decoration: underline 3px;
+  color: #B7AF90;
+  margin: 2vh;
+}
+li a, ul a {
+  display: inline;
+  color: #d9d9db;
+  margin: 1vh;
+}
+li a:hover, ul a:hover {
+  color: #B7AF90;
 }
 
 a {
   list-style: none;
   text-decoration: none;
-}
-
-.nav-menu {
-  padding-left: 10px;
-  flex-direction: row;
-}
-.nav-menu ul {
-  display: inline;
-  margin-left: 5px;
-}
-.nav-menu ul a {
   color: #d9d9db;
-  margin: 1vh;
-}
-.nav-menu ul a:hover {
-  list-style: none;
-  text-decoration: underline 3px;
-  color: #d9d9db;
-  background-color: #B7AF90;
-  margin: 2vh;
-}
-
-/*footer y header*/
-footer {
-  display: flex;
-  background-color: #121210;
-  padding: 25px;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-}
-footer p {
-  text-align: center;
-  color: #d9d9db;
-  margin: 1vh;
 }
 
 header {
@@ -67,7 +49,6 @@ header img {
   width: 80px;
 }
 
-/*Hoja de estilo de la pagina de inicio*/
 /*Primer breakpoint 480px aplicado al header*/
 @media (min-width: 480px) {
   header {
@@ -78,6 +59,24 @@ header img {
     width: 60px;
   }
 }
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #121210;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  color: #d9d9db;
+  margin: 1vh;
+}
+
+/*Hoja de estilo de la pagina de inicio*/
 .primerarticulo {
   display: flex;
   flex-direction: column;
@@ -88,28 +87,10 @@ header img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
   text-align: center;
   gap: 2rem;
-  /*Hoja de estilo de hoja acerca de:*/
-  /*Hoja de estilos para la pagina del resumen*/
-  /*primer articulo de la pagina resumen*/
-  /*segundo articulo Pagina de resumen*/
-  /*etiqueta realizada para el espaciado de el titulo de educación*/
-  /* 
-      @media (min-width: 768px)
-
-      {
-          .articulo2
-          {
-              display: grid;
-              grid-template-columns: 33% 34% 33%;
-              gap:10px;
-              padding: none;
-              margin: none;
-          }
-
-      } */
-  /*tercer articulo Pagina de resumen*/
+  opacity: 0, 8;
 }
 .primerarticulo h1 {
   font-family: roboto;
@@ -118,7 +99,7 @@ header img {
   font: style 1px;
   font-weight: 600;
 }
-.primerarticulo h1 .btn-primary {
+.primerarticulo .espacioboton {
   padding: 10px 30px;
   background-color: #111110;
   color: #d9d9db;
@@ -128,32 +109,39 @@ header img {
   list-style: none;
   text-decoration: none;
 }
-.primerarticulo h1 .btn-primary:hover {
+.primerarticulo .espacioboton:hover {
   padding: 5px 20px;
   background-color: #978F84;
   border-radius: 8px;
   padding: 10px 30px;
 }
-.primerarticulo h1 .btn-primary .espacioboton {
-  display: flex;
-  margin-top: 25px;
-  gap: 25px;
-}
-.primerarticulo h1 .btn-primary .espacioboton a {
+.primerarticulo .espacioboton:hover a {
   list-style: none;
   text-decoration: none;
+  color: #111110;
 }
-.primerarticulo h1 .btn-primary .espacioboton .redes-sociales {
+.primerarticulo .espacioboton {
+  display: flex;
+  margin-top: 25px;
+  gap: 25px;
+}
+.primerarticulo .espacioboton .redes-sociales {
   margin-top: 25px;
   display: flex;
   gap: 25px;
 }
-.primerarticulo .redes-sociales {
+
+.redes-sociales {
   margin-top: 25px;
   display: flex;
   gap: 25px;
 }
-.primerarticulo .acercade {
+.redes-sociales:hover {
+  margin: none;
+}
+
+/*Hoja de estilo de hoja acerca de:*/
+.acercade {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -163,25 +151,26 @@ header img {
   gap: 2rem;
   background-color: #4a362f;
 }
-.primerarticulo .acercade img {
+.acercade img {
   width: 150px;
 }
-.primerarticulo .acercade h1 {
+.acercade h1 {
   color: azure;
   padding: 25px;
 }
-.primerarticulo .acercade p {
+.acercade p {
   margin: auto 10px;
   margin-bottom: 15px;
   color: azure;
   text-align: center;
 }
+
 @media (min-width: 768px) {
-  .primerarticulo .acercade {
+  .acercade {
     flex-direction: row;
     height: 100vh;
   }
-  .primerarticulo .acercade p {
+  .acercade p {
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -191,19 +180,22 @@ header img {
     margin-right: 50px;
   }
 }
-.primerarticulo .articulo1 {
+/*Hoja de estilos para la pagina del resumen*/
+/*primer articulo de la pagina resumen*/
+.articulo1 {
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
+
 @media (min-width: 768px) {
-  .primerarticulo .seccion1 {
+  .seccion1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
   }
-  .primerarticulo .articulo1 {
+  .articulo1 {
     display: grid;
     grid-template-columns: 33% 34% 33%;
     gap: 10px;
@@ -212,22 +204,25 @@ header img {
     height: 100%;
   }
 }
-.primerarticulo .seccion1 {
+.seccion1 {
   margin-left: 15px;
 }
-.primerarticulo .skill1 {
+
+.skill1 {
   display: flex;
   gap: 2rem;
   align-items: center;
   padding: 5px;
 }
-.primerarticulo .skill2 {
+
+.skill2 {
   display: flex;
   gap: 2rem;
   align-items: center;
   padding: 5px;
 }
-.primerarticulo .skill3 {
+
+.skill3 {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -236,98 +231,126 @@ header img {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.primerarticulo .articulo1 h2 {
+
+.articulo1 h2 {
   text-align: center;
   padding: 15px;
 }
+
 @media (min-width: 768px) {
-  .primerarticulo .articulo1 h2 {
+  .articulo1 h2 {
     padding: 0;
   }
 }
-.primerarticulo .articulo1 h4 {
+.articulo1 h4 {
   padding: 15px;
 }
-.primerarticulo .articulo1 p {
+
+.articulo1 p {
   padding: 15px;
   justify-content: center;
 }
-.primerarticulo .articulo1 li {
+
+.articulo1 li {
   text-align: center;
   justify-content: center;
 }
-.primerarticulo .articulo2 {
+
+/*segundo articulo Pagina de resumen*/
+.articulo2 {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
   padding: 2rem;
 }
-.primerarticulo .articulo2 h2 {
+.articulo2 h2 {
   text-align: center;
 }
-.primerarticulo .articulo2 h2 h4 {
+.articulo2 h2 h4 {
   padding: 10px;
 }
-.primerarticulo .articulo2 h2 h4 p {
+.articulo2 h2 h4 p {
   padding: 10px;
   justify-content: center;
 }
-.primerarticulo .titulo2 {
+
+/*etiqueta realizada para el espaciado de el titulo de educación*/
+.titulo2 {
   padding-top: 2rem;
 }
+
 @media (min-width: 768px) {
-  .primerarticulo .articulo2 {
+  .articulo2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
   }
-  .primerarticulo .titulo2 {
+  .titulo2 {
     padding: 0px;
     top: 0px;
     margin: 0px;
   }
 }
-.primerarticulo .articulo3 {
+/* 
+    @media (min-width: 768px)
+
+    {
+        .articulo2
+        {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            gap:10px;
+            padding: none;
+            margin: none;
+        }
+
+    } */
+/*tercer articulo Pagina de resumen*/
+.articulo3 {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
   padding: 2rem;
 }
-.primerarticulo .articulo3 p {
+
+.articulo3 p {
   padding: 10px;
   justify-content: center;
 }
-.primerarticulo .articulo3 h2 {
+
+.articulo3 h2 {
   padding: 10px;
   justify-content: center;
   text-align: center;
 }
+
 @media (min-width: 768px) {
-  .primerarticulo .articulo3 {
+  .articulo3 {
     height: 100%;
   }
-  .primerarticulo .seccion3 {
+  .seccion3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
   }
-  .primerarticulo .articulo3 h2 {
+  .articulo3 h2 {
     margin: 0px;
     padding: 0px;
   }
 }
-.primerarticulo .hobbie {
+.hobbie {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
   justify-content: center;
 }
-.primerarticulo h2 {
+
+h2 {
   margin-bottom: 5px;
   margin-top: 5px;
 }
