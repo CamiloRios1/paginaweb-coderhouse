@@ -5,24 +5,53 @@
     box-sizing: border-box;
 }
 
+li, ul 
+    {
+        list-style: none;
+        list-style-type: none;
+    }
 
 a
 {
     list-style: none;
     text-decoration: none;
-    color: #d9d9db;
-    margin: 1vh;
 }
 
-a:hover
+
+.nav-menu
 {
-    list-style: none;
-    text-decoration:underline 3px; 
+    padding-left: 10px;
+    flex-direction: row;
+    ul
+    {
+        display: inline;
+        margin-left: 5px;
+        
+        a 
+        {
+    
+            color: #d9d9db;
+            margin: 1vh;
 
-    color: #d9d9db;
+            &:hover 
+            {
+                list-style: none;
+                text-decoration:underline 3px; 
+                color: #d9d9db;
+                background-color: #B7AF90;
+                margin: 2vh;
+            }
+        }
+    } 
 }
 
-footer
+
+
+
+
+/*footer y header*/
+
+    footer
 {
     display: flex;
     background-color:#121210;
@@ -32,24 +61,14 @@ footer
     bottom: 0;
     justify-content: center;
     align-items: center;
-}
-
-footer p 
-{   
-    text-align: center; 
-    color: #d9d9db;
-    margin: 1vh;
-}
-
-
-
-li, ul 
-    {
-        list-style: none;
-        list-style-type: none;
+    p 
+    {      
+        text-align: center; 
+        color: #d9d9db;
+        margin: 1vh;
     }
+}
 
-/*Hoja de estilo de la pagina de inicio*/
 
 
     header
@@ -63,14 +82,17 @@ li, ul
         width: 100%;
         top:0; 
         gap: 2rem;  
+        img 
+        {   
+            width: 80px;   
+        }
     } 
 
-    .imagenheader
-    {   
-       width: 80px;   
-    }
+
     
-    /*Primer breakpoint 480px aplicado al header*/
+/*Hoja de estilo de la pagina de inicio*/
+
+/*Primer breakpoint 480px aplicado al header*/
 
     @media (min-width:480px)
     {
@@ -84,22 +106,7 @@ li, ul
             width: 60px;   
         }
 
-    }
-
-    
-    
-    .nav-menu
-    {
-        padding-left: 10px;
-        flex-direction: row;
-    }
-    
-    ul
-    {
-        display: inline;
-        margin-left: 5px;
-    }
-    
+    } 
 
     .primerarticulo
     {   
@@ -114,37 +121,64 @@ li, ul
         height: 100%;
         text-align: center;
         gap:2rem;
+
+        h1
+        {
+            font-family: roboto;
+            font-size: 48px;
+            margin-bottom: -1px; 
+            font: style 1px;
+            font-weight: 600;
+            
+            .btn-primary 
+            {
+                padding: 10px 30px;
+                background-color: #111110;
+                color: #d9d9db;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                list-style: none;
+                text-decoration: none;
+                    
+                    &:hover
+                    {
+                        padding: 5px 20px;
+                        background-color: #978F84; 
+                        border-radius: 8px;
+                        padding: 10px 30px;
+                    }
+                    
+
+              
+                .espacioboton
+                {
+                    display:flex;
+                    margin-top: 25px;
+                    gap: 25px;
+
+                    a 
+                    {
+                        list-style: none;
+                        text-decoration: none;
+                    }
+
+                    .redes-sociales
+                    {
+                        margin-top: 25px;
+                        display: flex;
+                        gap:25px;
+                    }
+                }
+         
+                
+       
+        }
     }
 
 
-.primerarticulo h1
-    {
-        font-family: roboto;
-        font-size: 48px;
-        margin-bottom: -1px; 
-        font: style 1px;
-        font-weight: 600;
-     
-    }
 
 
-.btn-primary 
-    {
-        
-        padding: 10px 30px;
-        background-color: #4a362f;
-        color: #d9d9db;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-.espacioboton
-    {
-        display:flex;
-        margin-top: 25px;
-        gap: 25px;
-    }
 
 .redes-sociales
     {
@@ -167,24 +201,26 @@ li, ul
             gap:2rem;
             background-color: #4a362f;
             
-        }
-    .acercade img
-    {
-        width: 150px;
-    }
-    .acercade h1
-        {
-        color: azure;
-        padding:25px;
-        }
+            img 
+            {
+                width: 150px;
+            }
 
-    .acercade p
-        {
-        margin: auto 10px;
-        margin-bottom: 15px;
-        color: azure;
-        text-align:center;
+            h1
+            {
+            color: azure;
+            padding:25px;
+            }
+
+            p
+            {
+            margin: auto 10px;
+            margin-bottom: 15px;
+            color: azure;
+            text-align:center;
+            }
         }
+   
 
         @media (min-width:768px)
         {
@@ -193,6 +229,7 @@ li, ul
                 flex-direction:row;
                 height: 100vh;
             }
+
             .acercade p
             {
                 align-items: center;
@@ -311,14 +348,20 @@ li, ul
         display:flex;
         flex-direction: column; 
         padding-bottom: 15px; 
-        padding: 2rem;       
-    }
-
-    
-
-    .articulo2 h2
-    {
-        text-align: center;         
+        padding: 2rem;  
+        h2
+        {
+            text-align: center;
+            h4
+            {
+                padding: 10px;
+                p
+                {
+                    padding: 10px;
+                    justify-content: center;
+                }
+            }            
+        }     
     }
 
     /*etiqueta realizada para el espaciado de el titulo de educación*/
@@ -328,16 +371,7 @@ li, ul
         padding-top: 2rem;
     }
 
-    .articulo2 h4
-    {
-        padding: 10px;
-    }
-
-    .articulo2 p
-    {
-        padding: 10px;
-        justify-content: center;
-    }
+     
     @media (min-width: 768px)
         
     {
@@ -436,4 +470,6 @@ li, ul
     {
         margin-bottom: 5px;
         margin-top:5px;
+    }
+
     }
