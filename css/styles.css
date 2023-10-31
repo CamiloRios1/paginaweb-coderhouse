@@ -255,6 +255,8 @@ Hoja de estilo de la pagina de inicio*/
   flex-direction: column;
   padding-bottom: 15px;
   padding: 2rem;
+  background-color: #d9d9db;
+  opacity: 0.7;
   /*etiqueta realizada para el espaciado de el titulo de educación*/
 }
 .articulo1 .articulo2 h2 {
@@ -293,7 +295,7 @@ Hoja de estilo de la pagina de inicio*/
     flex-direction: row;
     justify-content: space-around;
     position: static;
-    height: 95vh;
+    height: 98vh;
   }
   .articulo1 {
     display: grid;
