@@ -76,7 +76,8 @@ footer p {
   margin: 1vh;
 }
 
-/*Hoja de estilo de la pagina de inicio*/
+/*---------------------------
+Hoja de estilo de la pagina de inicio*/
 .primerarticulo {
   display: flex;
   flex-direction: column;
@@ -86,11 +87,8 @@ footer p {
   background-image: url("../img/background1.jpg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   text-align: center;
   gap: 2rem;
-  opacity: 0, 8;
 }
 .primerarticulo h1 {
   font-family: roboto;
