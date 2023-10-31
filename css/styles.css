@@ -178,7 +178,7 @@ Hoja de estilo de la pagina de inicio*/
   .acercade {
     flex-direction: row;
     height: 100vh;
-    padding: 150px;
+    padding: 50px;
   }
   .acercade p {
     align-items: center;
