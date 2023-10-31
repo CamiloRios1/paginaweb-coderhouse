@@ -231,9 +231,13 @@ Hoja de estilo de la pagina de inicio*/
 }
 .articulo1 .seccion1 .skill1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 5px;
+  gap: 3rem;
+}
+.articulo1 .seccion1 .skill1 img {
+  width: 20px;
 }
 .articulo1 .seccion1 .skill2 {
   display: flex;

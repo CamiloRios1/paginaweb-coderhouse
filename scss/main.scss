@@ -305,9 +305,14 @@ Hoja de estilo de la pagina de inicio*/
             .skill1
             {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
-                padding:5px;          
+                padding:5px; 
+                gap:3rem; 
+                img
+                {
+                    width: 20px;
+                }        
             }
             .skill2
             {
