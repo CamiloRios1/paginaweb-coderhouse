@@ -17,7 +17,6 @@ li:hover, ul:hover {
   list-style: none;
   text-decoration: underline 3px;
   color: #B7AF90;
-  margin: 2vh;
 }
 li a, ul a {
   display: inline;
@@ -151,22 +150,21 @@ Hoja de estilo de la pagina de inicio*/
 .acercade {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 15px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 3rem;
-  background-color: #4a362f;
-  height: 100vh;
-}
-.acercade img {
-  width: 150px;
+  gap: 1rem;
+  background: linear-gradient(to bottom right, #111110, #978F84);
+  width: 100%;
+  height: 100%;
 }
 .acercade h1 {
   color: azure;
   padding-bottom: 25px;
 }
 .acercade p {
+  margin: 10px;
   margin-bottom: 15px;
   color: azure;
   text-align: center;
@@ -176,15 +174,15 @@ Hoja de estilo de la pagina de inicio*/
   .acercade {
     flex-direction: row;
     height: 100vh;
+    padding: 150px;
   }
   .acercade p {
     align-items: center;
     justify-content: center;
     text-align: left;
-    gap: 5px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+    gap: 2rem;
+    margin: 20px;
+    margin-right: 20px;
   }
 }
 /*Hoja de estilos para la pagina del resumen*/
@@ -192,21 +190,24 @@ Hoja de estilo de la pagina de inicio*/
 .articulo1 {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   background-color: #B7AF90;
   width: 100%;
   height: 100%;
-  padding: 3rem;
+  justify-content: center;
+  margin-bottom: 100px;
   /*segundo articulo Pagina de resumen*/
   /*tercer articulo Pagina de resumen*/
 }
 .articulo1 .seccion1 {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 15px;
+  padding: 2rem;
 }
 .articulo1 .seccion1 h2 {
   text-align: center;
-  padding: 15px;
+  padding: 5px;
 }
 .articulo1 .seccion1 h4 {
   padding: 15px;
@@ -237,13 +238,18 @@ Hoja de estilo de la pagina de inicio*/
   gap: 3rem;
 }
 .articulo1 .seccion1 .skill1 img {
-  width: 20px;
+  width: 30px;
 }
 .articulo1 .seccion1 .skill2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 5px;
+  gap: 1rem;
+}
+.articulo1 .seccion1 .skill2 img {
+  width: 30px;
+  padding-top: 15px;
 }
 .articulo1 .seccion1 .skill3 {
   display: flex;
@@ -257,19 +263,22 @@ Hoja de estilo de la pagina de inicio*/
 .articulo1 .articulo2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   padding-bottom: 15px;
   padding: 2rem;
-  background-color: #d9d9db;
-  opacity: 0.7;
+  background: linear-gradient(to bottom right, #111110, #978F84);
+  color: #d9d9db;
   /*etiqueta realizada para el espaciado de el titulo de educación*/
 }
 .articulo1 .articulo2 h2 {
+  margin-left: 15px;
   text-align: center;
 }
-.articulo1 .articulo2 h2 h4 {
+.articulo1 .articulo2 h4 {
   padding: 10px;
 }
-.articulo1 .articulo2 h2 h4 p {
+.articulo1 .articulo2 p {
   padding: 10px;
   justify-content: center;
 }
@@ -279,7 +288,6 @@ Hoja de estilo de la pagina de inicio*/
 .articulo1 .articulo3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   padding-bottom: 15px;
   padding: 2rem;
@@ -289,24 +297,41 @@ Hoja de estilo de la pagina de inicio*/
   justify-content: center;
 }
 .articulo1 .articulo3 h2 {
-  padding: 10px;
+  padding: 15px;
   justify-content: center;
   text-align: center;
+}
+.articulo1 .articulo3 .hobbie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.articulo1 .articulo3 .hobbie img {
+  width: 30px;
+  padding-top: 15px;
 }
 
 @media (min-width: 768px) {
   .seccion1 {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     position: static;
-    height: 98vh;
+    height: 100vh;
   }
   .articulo1 {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
+  }
+  .articulo1:hover {
+    list-style: none;
+    list-style-type: none;
+    margin: none;
   }
   .articulo1 h2 {
     padding-bottom: 15px;
@@ -346,6 +371,10 @@ Hoja de estilo de la pagina de inicio*/
     align-items: center;
     gap: 2rem;
     justify-content: center;
+  }
+  .hobbie img {
+    width: 30px;
+    padding-top: 15px;
   }
   h2 {
     margin-bottom: 5px;

@@ -20,7 +20,6 @@ li, ul
             list-style: none;
             text-decoration:underline 3px; 
             color: #B7AF90;
-            margin: 2vh;
         }
 
         a 
@@ -198,18 +197,16 @@ Hoja de estilo de la pagina de inicio*/
             
             display: flex;
             flex-direction: column;
-            padding: 5px;
+            padding: 15px;
             justify-content:center;
             align-items: center;
             text-align:center;
-            gap: 3rem;
-            background-color: #4a362f;
-            height: 100vh;
+            gap: 1rem;
+            background: linear-gradient(to bottom right, #111110, #978F84);           
+            width: 100%;
+            height: 100%;
             
-            img 
-            {
-                width: 150px;
-            }
+           
 
             h1
             {
@@ -219,6 +216,7 @@ Hoja de estilo de la pagina de inicio*/
 
             p
             {
+            margin: 10px;
             margin-bottom: 15px;
             color: azure;
             text-align:center;
@@ -232,6 +230,8 @@ Hoja de estilo de la pagina de inicio*/
             {
                 flex-direction:row;
                 height: 100vh;
+                padding: 150px;
+                
             }
 
             .acercade p
@@ -239,10 +239,9 @@ Hoja de estilo de la pagina de inicio*/
                 align-items: center;
                 justify-content: center;
                 text-align: left;
-                gap: 5px;
-                margin-bottom: 15px;
-                margin-left: 50px;
-                margin-right: 50px;
+                gap: 2rem;
+                margin: 20px;
+                margin-right: 20px;
             }
         }
 
@@ -255,22 +254,26 @@ Hoja de estilo de la pagina de inicio*/
     {
         display:flex;
         flex-direction: column;
-        padding: 2rem;   
         background-color: #B7AF90; 
         width: 100%;
         height: 100%;
-        padding: 3rem;
-        
+        justify-content:center;
+        margin-bottom: 100px;  
+
         .seccion1 
         
         {
-        margin-left:15px;
-        justify-content: space-around;
+            display:flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            padding-bottom: 15px; 
+            padding: 2rem;
+          
 
             h2
             {
                 text-align: center;
-                padding: 15px;
+                padding: 5px;
             }
             h4
             {
@@ -288,6 +291,7 @@ Hoja de estilo de la pagina de inicio*/
             text-align: center;
             justify-content: center;
             }
+            
             li lu 
             {
                 color:#111110;
@@ -309,17 +313,25 @@ Hoja de estilo de la pagina de inicio*/
                 align-items: center;
                 padding:5px; 
                 gap:3rem; 
+
                 img
                 {
-                    width: 20px;
+                    width: 30px;
                 }        
             }
             .skill2
             {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
-                padding:5px;          
+                padding:5px;  
+                gap:1rem;  
+
+                img
+                {
+                    width: 30px;
+                    padding-top: 15px;
+                }        
             }
 
             .skill3
@@ -339,26 +351,33 @@ Hoja de estilo de la pagina de inicio*/
 
         .articulo2
         {
+            
             display:flex;
             flex-direction: column; 
+            align-items: center;
+            justify-content: space-around;
             padding-bottom: 15px; 
-            padding: 2rem;  
-            background-color: #d9d9db;
-            opacity: 0.7;
-
+            padding: 2rem;
+            background: linear-gradient(to bottom right,  #111110, #978F84);
+            color: #d9d9db;          
             h2
+
             {
+                margin-left:15px;
+                
                 text-align: center;
-                h4
-                {
-                    padding: 10px;
-                    p
-                    {
-                        padding: 10px;
-                        justify-content: center;
-                    }
-                }            
-            }  
+            } 
+            h4
+
+            {
+                padding: 10px;
+            }            
+            p
+
+            {
+                padding: 10px;
+                justify-content: center;
+            }
             
             /*etiqueta realizada para el espaciado de el titulo de educación*/
     
@@ -375,7 +394,6 @@ Hoja de estilo de la pagina de inicio*/
         {
             display:flex;
             flex-direction: column; 
-            align-items: center;
             justify-content: space-around;
             padding-bottom: 15px; 
             padding: 2rem;
@@ -387,9 +405,23 @@ Hoja de estilo de la pagina de inicio*/
             }
             h2
             {
-                padding: 10px;
+                padding: 15px;
                 justify-content: center;
                 text-align: center;
+            }
+            .hobbie
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:2rem;
+                justify-content: center;
+                
+                img
+                {
+                    width: 30px;
+                    padding-top: 15px;
+                }   
             }
         }
     }
@@ -400,10 +432,9 @@ Hoja de estilo de la pagina de inicio*/
         .seccion1
         {
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             position: static;
-            height: 98vh;
-
+             height: 100vh;
         }
     
         .articulo1
@@ -411,10 +442,17 @@ Hoja de estilo de la pagina de inicio*/
             display: grid;
             grid-template-columns: 30% 40% 30%;
             gap:10px;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
-            
+            height: 100%;
+            &:hover
+            {
+                list-style: none;
+                list-style-type: none;
+                margin: none
+            }
         }
+
         .articulo1 h2
         {
             padding-bottom: 15px;
@@ -469,6 +507,12 @@ Hoja de estilo de la pagina de inicio*/
             align-items: center;
             gap:2rem;
             justify-content: center;
+
+            img
+            {
+                width: 30px;
+                padding-top: 15px;
+            }   
         }
 
         h2
