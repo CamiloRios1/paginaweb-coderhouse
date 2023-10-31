@@ -173,6 +173,12 @@ Hoja de estilo de la pagina de inicio*/
                 margin-top: 25px;
                 display: flex;
                 gap:25px;
+                
+                &:hover
+                
+                {
+                    width: 200px;
+                }
             }
         }  
     }
@@ -183,11 +189,18 @@ Hoja de estilo de la pagina de inicio*/
         margin-top: 25px;
         display: flex;
         gap:25px;
-        &:hover{
+        border-radius: 15%;
 
-            margin: none;
+        img
+        {
+            &:hover 
 
+        {
+           background-color:aquamarine;
         }
+
+        };
+        
     }
 
 /*Hoja de estilo de hoja acerca de:*/
