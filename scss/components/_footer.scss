@@ -1,0 +1,21 @@
+footer
+    {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color:#121210;
+        padding: 25px;
+        align-items: end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+        p 
+        {      
+            text-align: center; 
+            color: #d9d9db;
+            margin: 1vh;
+        }
+    }

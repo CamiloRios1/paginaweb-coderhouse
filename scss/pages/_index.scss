@@ -1,0 +1,99 @@
+/*---------------------------
+Hoja de estilo de la pagina de inicio*/
+
+.primerarticulo
+{   
+    display:flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-image: url("../img/background1.jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    gap:2rem;
+    height: 100vh;
+    
+    h1
+    {
+        font-family: roboto;
+        font-size: 48px;
+        margin-bottom: -1px; 
+        font: style 1px;
+        font-weight: 600;
+    }
+   
+    .espacioboton        
+    {
+        padding: 10px 30px;
+        background-color: #111110;
+        color: #d9d9db;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        list-style: none;
+        text-decoration: none;
+            
+            &:hover
+            {
+                padding: 5px 20px;
+                background-color: #978F84; 
+                border-radius: 8px;
+                padding: 10px 30px;
+               
+                a 
+                {
+                    list-style: none;
+                    text-decoration: none;
+                    color: #111110;
+                }
+            }
+            
+            
+    }       
+
+        
+    .espacioboton
+    {
+        display:flex;
+        margin-top: 25px;
+        gap: 25px;
+
+
+
+
+        .redes-sociales
+        {
+            margin-top: 25px;
+            display: flex;
+            gap:25px;
+            
+            &:hover
+            
+            {
+                width: 200px;
+            }
+        }
+    }  
+}
+
+
+.redes-sociales
+{
+    margin-top: 25px;
+    display: flex;
+    gap:25px;
+    border-radius: 15%;
+
+    img
+    {
+        &:hover 
+
+    {
+       background-color:aquamarine;
+    }
+
+    };
+    
+}

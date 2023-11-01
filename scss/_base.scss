@@ -1,0 +1,58 @@
+$color-1: #D9D9DB; 
+$color-2: #B7AF90;
+$color-3: #978F84;
+$color-4: #4A362F;
+$color-5: #111110;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+        font-family: roboto;
+        font-size: 48px;
+        margin-bottom: -1px; 
+        font: style 1px;
+        font-weight: 600;
+    }
+
+h2{
+    font-family: roboto;
+    font-size: 24px;
+    margin-bottom: -1px; 
+    font: style 1px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: roboto;
+    font-size: 18px;
+    margin-bottom: -1px; 
+    font: style 1px;
+    font-weight: 800;
+}
+
+p{
+    font-family: roboto;
+    font-size: 18px;
+    margin-bottom: -1px; 
+    font: style 1px;
+    font-weight: 300;
+}
+
+a{
+    font-family: roboto;
+    font-size: 18px;
+    margin-bottom: -1px; 
+    font: style 1px;
+    font-weight: 300;
+    text-decoration: none;
+    }
+    
+ul,
+ol,
+li{
+    list-style: none;
+}

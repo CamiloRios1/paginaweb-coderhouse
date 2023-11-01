@@ -1,0 +1,276 @@
+/*Hoja de estilos para la pagina del resumen*/
+
+/*primer articulo de la pagina resumen*/
+
+.articulo1
+{
+    display:flex;
+    flex-direction: column;
+    background-color: #B7AF90; 
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    margin-bottom: 100px;  
+
+    .seccion1 
+    
+    {
+        display:flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        padding-bottom: 15px; 
+        padding: 2rem;
+      
+
+        h2
+        {
+            text-align: center;
+            padding: 5px;
+        }
+        h4
+        {
+            padding: 15px;
+        }
+
+        p
+        {
+            padding: 15px;
+            justify-content: center;
+        }
+
+        li
+        {
+        text-align: center;
+        justify-content: center;
+        }
+        
+        li lu 
+        {
+            color:#111110;
+
+            &:hover
+                {
+                list-style: none;
+                text-decoration:none; 
+                color: none;
+                margin: none;
+                padding: 0;
+                }
+        }
+
+        .skill1
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding:5px; 
+            gap:3rem; 
+
+            img
+            {
+                width: 30px;
+            }        
+        }
+        .skill2
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding:5px;  
+            gap:1rem;  
+
+            img
+            {
+                width: 30px;
+                padding-top: 15px;
+            }        
+        }
+
+        .skill3
+        {
+            display: flex;
+            gap:1rem;
+            align-items: center;
+            padding:5px; 
+            justify-content: space-between;
+            flex-direction: row;         
+            flex-wrap: wrap;
+        }
+
+    }  
+
+    /*segundo articulo Pagina de resumen*/
+
+    .articulo2
+    {
+        
+        display:flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 15px; 
+        padding: 2rem;
+        background: linear-gradient(to bottom right,  #111110, #978F84);
+        color: #d9d9db;          
+        h2
+
+        {
+            margin-left:15px;
+            
+            text-align: center;
+        } 
+        h4
+
+        {
+            padding: 10px;
+        }            
+        p
+
+        {
+            padding: 10px;
+            justify-content: center;
+        }
+        
+        /*etiqueta realizada para el espaciado de el titulo de educación*/
+
+        .titulo2
+        {
+            padding-top: 2rem;
+        }   
+    }
+
+    /*tercer articulo Pagina de resumen*/
+
+    .articulo3
+
+    {
+        display:flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        padding-bottom: 15px; 
+        padding: 2rem;
+        
+        p
+        {
+            padding: 10px;
+            justify-content: center;
+        }
+        h2
+        {
+            padding: 15px;
+            justify-content: center;
+            text-align: center;
+        }
+        .hobbie
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:2rem;
+            justify-content: center;
+            
+            img
+            {
+                width: 30px;
+                padding-top: 15px;
+            }   
+        }
+    }
+}
+
+@media (min-width: 768px)
+    
+{
+    .seccion1
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+         height: 100vh;
+    }
+
+    .articulo1
+    {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        gap:10px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        &:hover
+        {
+            list-style: none;
+            list-style-type: none;
+            margin: none
+        }
+    }
+
+    .articulo1 h2
+    {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    /*Responsive articulo 2*/
+
+    .articulo2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .titulo2
+    {
+        padding: 0px;
+        top: 0px;
+        margin: 0px;
+    }
+
+    /*Responsive articulo 3*/
+
+    .articulo3
+    {
+        height: 95vh;
+    }
+   
+    .seccion3
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .articulo3 h2
+    
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .hobbie
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:2rem;
+        justify-content: center;
+
+        img
+        {
+            width: 30px;
+            padding-top: 15px;
+        }   
+    }
+
+    h2
+    {
+        margin-bottom: 5px;
+        margin-top:5px;
+    }
+        
+}
