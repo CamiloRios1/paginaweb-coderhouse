@@ -15,29 +15,11 @@
     .seccion1 
     
     {
-        display:flex;
+        @include flexbox();
         flex-direction: column; 
-        justify-content: space-around;
         padding-bottom: 15px; 
         padding: 2rem;
-      
-
-        h2
-        {
-            text-align: center;
-            padding: 5px;
-        }
-        h4
-        {
-            padding: 15px;
-        }
-
-        p
-        {
-            padding: 15px;
-            justify-content: center;
-        }
-
+        
         li
         {
         text-align: center;
@@ -63,8 +45,9 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding:5px; 
-            gap:3rem; 
+            padding:1rem; 
+
+            gap:2rem; 
 
             img
             {
@@ -76,8 +59,9 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding:5px;  
-            gap:1rem;  
+            padding:1rem; 
+
+            gap:2rem;  
 
             img
             {
@@ -88,11 +72,9 @@
 
         .skill3
         {
-            display: flex;
-            gap:1rem;
-            align-items: center;
-            padding:5px; 
-            justify-content: space-between;
+            @include flexbox(space-between, center);
+            gap: 1rem;
+            padding:2rem; 
             flex-direction: row;         
             flex-wrap: wrap;
         }
@@ -103,33 +85,12 @@
 
     .articulo2
     {
-        
-        display:flex;
+        @include flexbox();
         flex-direction: column; 
-        align-items: center;
-        justify-content: space-around;
         padding-bottom: 15px; 
         padding: 2rem;
         background: linear-gradient(to bottom right,  #111110, #978F84);
         color: #d9d9db;          
-        h2
-
-        {
-            margin-left:15px;
-            
-            text-align: center;
-        } 
-        h4
-
-        {
-            padding: 10px;
-        }            
-        p
-
-        {
-            padding: 10px;
-            justify-content: center;
-        }
         
         /*etiqueta realizada para el espaciado de el titulo de educación*/
 
@@ -144,23 +105,12 @@
     .articulo3
 
     {
-        display:flex;
+        @include flexbox();
         flex-direction: column; 
-        justify-content: space-around;
         padding-bottom: 15px; 
         padding: 2rem;
-        
-        p
-        {
-            padding: 10px;
-            justify-content: center;
-        }
-        h2
-        {
-            padding: 15px;
-            justify-content: center;
-            text-align: center;
-        }
+        padding-bottom: 15px; 
+
         .hobbie
         {
             display: flex;
@@ -181,13 +131,7 @@
 @media (min-width: 768px)
     
 {
-    .seccion1
-    {
-        flex-direction: row;
-        justify-content: space-between;
-        position: static;
-         height: 100vh;
-    }
+   
 
     .articulo1
     {
@@ -197,12 +141,21 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
         &:hover
         {
             list-style: none;
             list-style-type: none;
             margin: none
         }
+    }
+    .seccion1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
 
     .articulo1 h2
@@ -215,6 +168,7 @@
 
     .articulo2
     {
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -243,6 +197,7 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        
     }
     
     .articulo3 h2

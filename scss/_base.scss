@@ -37,7 +37,7 @@ h3{
 p{
     font-family: roboto;
     font-size: 18px;
-    margin-bottom: -1px; 
+    margin-bottom: 1px; 
     font: style 1px;
     font-weight: 300;
 }
@@ -45,7 +45,7 @@ p{
 a{
     font-family: roboto;
     font-size: 18px;
-    margin-bottom: -1px; 
+    margin-bottom: 1px; 
     font: style 1px;
     font-weight: 300;
     text-decoration: none;
@@ -56,3 +56,39 @@ ol,
 li{
     list-style: none;
 }
+
+@mixin flexbox($justify:center, $align:center)
+{
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+    h2
+
+    {
+        margin-left:15px;
+        text-align: center;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+
+    } 
+    
+    h4
+
+    {
+        padding: 10px;
+        padding-left: 2rem;
+
+    }            
+    p
+
+    {
+        padding: 10px;
+        padding-left: 2rem;
+        justify-content: center;
+    }
+}
+
+
+        
+    
