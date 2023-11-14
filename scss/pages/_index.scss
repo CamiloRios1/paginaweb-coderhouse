@@ -26,27 +26,28 @@ Hoja de estilo de la pagina de inicio*/
    
     .espacioboton        
     {
-        padding: 10px 30px;
-        background-color: #111110;
-        color: #d9d9db;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        list-style: none;
-        text-decoration: none;
+        @include boton();
+        
+        // padding: 5px 20px;
+        // background-color: $color-8;
+        // color: #d9d9db;
+        // border: none;
+        // border-radius: 5px;
+        // cursor: pointer;
+        // list-style: none;
+        // text-decoration: none;
             
             &:hover
             {
-                padding: 5px 20px;
-                background-color: #978F84; 
-                border-radius: 8px;
-                padding: 10px 30px;
+                
+                cursor:pointer;
+                
                
                 a 
                 {
-                    list-style: none;
-                    text-decoration: none;
-                    color: #111110;
+                    border-radius:5px;
+                  
+                    
                 }
             }
             

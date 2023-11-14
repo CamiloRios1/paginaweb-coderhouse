@@ -1,0 +1,89 @@
+.contenidoportafolio
+{
+    @include flexbox();
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    background: linear-gradient(to top left, $color-5, $color-3);           
+
+    p
+    {
+        text-align: center;
+        max-width:400px; 
+    }
+}
+
+.card1 
+{
+
+    @include flexbox();
+    @include card();
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $color-2;
+    a
+    {
+        color: $color-7;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.card2
+{
+    @include flexbox();
+    @include card();
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $color-2;
+    a
+    {
+        color: $color-7;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 768px)
+{
+    .contenidoportafolio
+    {
+    @include flexbox();
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    background: linear-gradient(to top left, $color-5, $color-3);    
+    padding-bottom: 3rem;
+
+    p
+    {
+        text-align: center;
+        max-width:850px; 
+    }
+
+    .seccionheader{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccioncard{
+        display: flex;
+        flex-direction: row;
+        max-width: 1080px;
+    }
+
+    a
+    {
+        color: blue;
+        margin: 0;
+        padding: 0;
+    }
+    h2
+    {
+        padding: 2rem ;
+    }
+}
+
+}
+

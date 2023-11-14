@@ -7,10 +7,9 @@
     display:flex;
     flex-direction: column;
     background-color: #B7AF90; 
-    width: 100%;
-    height: 100%;
+   
     justify-content:center;
-    margin-bottom: 100px;  
+    margin-bottom: 0px;  
 
     .seccion1 
     
@@ -45,7 +44,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding:1rem; 
+            padding:15px; 
 
             gap:2rem; 
 
@@ -59,7 +58,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding:1rem; 
+            padding:15px; 
 
             gap:2rem;  
 
@@ -74,7 +73,7 @@
         {
             @include flexbox(space-between, center);
             gap: 1rem;
-            padding:2rem; 
+            padding:15px; 
             flex-direction: row;         
             flex-wrap: wrap;
         }
@@ -106,10 +105,8 @@
 
     {
         @include flexbox();
-        flex-direction: column; 
         padding-bottom: 15px; 
         padding: 2rem;
-        padding-bottom: 15px; 
 
         .hobbie
         {
@@ -136,26 +133,23 @@
     .articulo1
     {
         display: grid;
+        position:static;
         grid-template-columns: 30% 40% 30%;
-        gap:10px;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         height: 100%;
+    }  
 
-        &:hover
-        {
-            list-style: none;
-            list-style-type: none;
-            margin: none
-        }
-    }
+
+    
     .seccion1
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        height: 100%;
+        
     }
 
     .articulo1 h2
@@ -187,25 +181,19 @@
 
     .articulo3
     {
-        height: 95vh;
+        height: 100%;
     }
    
     .seccion3
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        height: 100%;
-        
+        height: 100%;   
     }
     
-    .articulo3 h2
     
-    {
-        margin: 0px;
-        padding: 0px;
-    }
 
     .hobbie
     {
@@ -220,12 +208,12 @@
             width: 30px;
             padding-top: 15px;
         }   
+        h2
+        {
+            margin-bottom: 5px;
+            margin-top:5px;
+        }
     }
 
-    h2
-    {
-        margin-bottom: 5px;
-        margin-top:5px;
-    }
-        
+            
 }

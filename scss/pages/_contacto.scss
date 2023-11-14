@@ -1,0 +1,125 @@
+/*General*/
+body.codycontacto{
+    background-color:$color-6;
+}
+
+  
+  .create {
+    width: 100%;
+    border-radius:15px;
+    background:linear-gradient(to bottom right, #111110, #978F84);           
+    padding: rem;  
+
+        h1  
+        {
+        color: $color-1;
+        }
+        
+    
+        p 
+        {color:$color-1;}
+        
+        a
+        {
+            color:$color-4; 
+            text-decoration:none;
+          }
+  }
+
+  .login{
+    text-align:right;
+  }
+  
+  .content h1 {
+    font-size:26px;
+    margin-bottom: 40px;
+    text-align:center;
+  }
+
+  .content {
+
+    width: 95%;
+    margin: 3rem auto;
+  }
+  
+  .content p {
+    font-size:16px;
+    line-height:26px;
+    text-align:center;
+    
+  }
+  /*form*/
+  .form label {
+    font-size:14px;
+    font-weight:bold;
+    display:block;
+    margin-bottom: .3rem;
+    color:$color-1;
+  }
+  .form input
+  {
+    display:block;
+    border:none;
+    width:100%;
+  }
+  .form input:not([type="submit"])
+  {
+    border: 1px solid #495e8d;
+    border-radius: 5px;
+    background-color:transparent;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color:white;
+    font-size:18px;
+  }
+  
+  .form {
+    margin-top:2rem;
+  }
+  
+ .form input[type="submit"] 
+  {
+   
+   border-radius:5px;
+   background-color:#e3627f;
+   color:white;
+   font-weight:bold;
+   padding: 1.5rem 3rem;
+   cursor:pointer;
+  }
+  
+  .legal
+  {
+    border-radius:10px;
+    background:$color-3;
+    padding: 2rem;
+    width:80%;
+    margin: 0 auto;
+    font-size:14px;
+    line-height:24px;
+    color:$color-2;
+    text-align: center;
+   
+  }
+  
+  @media (min-width: 768px)
+    
+{
+    .bodycontacto {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .create {
+        width: 768px;
+        margin: 5px auto;
+
+        border-radius:15px;
+        background:linear-gradient(to bottom right, #111110, #978F84);          
+        padding: 3rem;  
+      }
+      .body
+      {
+        background: $color-3;
+      }
+}
+

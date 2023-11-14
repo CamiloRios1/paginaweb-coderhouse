@@ -1,0 +1,25 @@
+@mixin boton()
+
+{
+display:block;
+border:none;
+width:50%;
+justify-content: center;
+align-items: center;
+border-radius:5px;
+background-color:#e3627f;
+color:white;
+font-weight:bold;
+padding: 0.3rem 1rem;
+cursor:pointer;
+max-width: 500px;
+
+    &:hover
+    {
+        color: $color-6;
+        a
+        {
+            color: $color-6;
+        }
+    }
+}

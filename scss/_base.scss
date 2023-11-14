@@ -3,6 +3,11 @@ $color-2: #B7AF90;
 $color-3: #978F84;
 $color-4: #4A362F;
 $color-5: #111110;
+$color-6: #121210;
+$color-7: #495e8d;
+$color-8: #e3627f;
+
+
 
 *{
     margin:0;
@@ -42,7 +47,8 @@ p{
     font-weight: 300;
 }
 
-a{
+a
+{
     font-family: roboto;
     font-size: 18px;
     margin-bottom: 1px; 
@@ -68,8 +74,7 @@ li{
     {
         margin-left:15px;
         text-align: center;
-        padding-left: 2rem;
-        padding-bottom: 1rem;
+        padding:1rem;
 
     } 
     
@@ -89,6 +94,31 @@ li{
     }
 }
 
+@mixin card ()
+{
 
+        @include flexbox();
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap:2rem;
+
+        img 
+        {
+            
+            border-radius: 50%;
+            object-fit: cover;
+            
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+        p 
+        {
+            text-align: center;  
+    }
+}
         
     

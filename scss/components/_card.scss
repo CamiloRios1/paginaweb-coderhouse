@@ -1,0 +1,27 @@
+@mixin card ()
+{
+
+    @include flexbox();
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        img 
+        {
+            width: 150px;
+            border-radius: 50%;        
+        }
+
+        h2 
+        {
+            font-weight: bold;
+        }
+
+        p 
+        {
+            text-align: center;
+        }
+
+}
+        
+    
