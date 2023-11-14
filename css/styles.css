@@ -218,7 +218,8 @@ Hoja de estilo de la pagina de inicio*/
   background-size: cover;
   text-align: center;
   gap: 2rem;
-  height: 100vh;
+  height: 100%;
+  padding: 2rem;
 }
 .primerarticulo h1 {
   font-family: roboto;
@@ -689,7 +690,7 @@ body.codycontacto {
   width: 100%;
   border-radius: 15px;
   background: linear-gradient(to bottom right, #111110, #978F84);
-  padding: rem;
+  padding: 1rem;
 }
 .create h1 {
   color: #D9D9DB;
