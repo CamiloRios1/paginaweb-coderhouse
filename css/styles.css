@@ -274,8 +274,14 @@ Hoja de estilo de la pagina de inicio*/
   gap: 25px;
   border-radius: 15%;
 }
+
+.redes-sociales img {
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
 .redes-sociales img:hover {
-  background-color: aquamarine;
+  transform: scale(1.5);
 }
 
 /*Hoja de estilos para la pagina del resumen*/

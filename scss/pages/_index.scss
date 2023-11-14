@@ -25,9 +25,13 @@ Hoja de estilo de la pagina de inicio*/
         font: style 1px;
         font-weight: 600;
     }
+
    
-    .espacioboton        
+
+    .espacioboton   
+
     {
+        
         @include boton();
 
         // padding: 5px 20px;
@@ -48,8 +52,6 @@ Hoja de estilo de la pagina de inicio*/
                 a 
                 {
                     border-radius:5px;
-                  
-                    
                 }
             }
             
@@ -62,9 +64,6 @@ Hoja de estilo de la pagina de inicio*/
         display:flex;
         margin-top: 25px;
         gap: 25px;
-
-
-
 
         .redes-sociales
         {
@@ -89,14 +88,13 @@ Hoja de estilo de la pagina de inicio*/
     gap:25px;
     border-radius: 15%;
 
-    img
-    {
-        &:hover 
+}
 
-    {
-       background-color:aquamarine;
-    }
+.redes-sociales img {
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
 
-    };
-    
+.redes-sociales img:hover {
+    transform: scale(1.5);
 }
