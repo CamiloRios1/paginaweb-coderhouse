@@ -123,9 +123,10 @@ header img {
   position: absolute;
   width: 100%;
   height: 100%;
+  flex-direction: column;
 }
 
-/*Primer breakpoint 480px aplicado al header*/
+/* Primer breakpoint 480px aplicado al header */
 @media (min-width: 480px) {
   header {
     display: flex;
@@ -213,13 +214,34 @@ Hoja de estilo de la pagina de inicio*/
   justify-content: center;
   align-items: center;
   padding: 25px;
-  background-image: url("../img/background1.jpg.png");
+  background: linear-gradient(to bottom right, rgba(17, 17, 16, 0.6), rgba(151, 143, 132, 0.9)), url("../img/background1.jpg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   gap: 2rem;
   height: 100%;
   padding: 2rem;
+  width: 100%;
+  /* .espacioboton
+   {
+       display:flex;
+       margin-top: 25px;
+       gap: 25px;
+
+       .redes-sociales
+       {
+           margin-top: 25px;
+           display: flex;
+           gap:25px;
+
+           &:hover
+
+           {
+               width: 200px;
+           }
+       }
+   }  */
 }
 .primerarticulo h1 {
   font-family: roboto;
@@ -228,21 +250,25 @@ Hoja de estilo de la pagina de inicio*/
   font: style 1px;
   font-weight: 600;
 }
+.primerarticulo p {
+  max-width: 650px;
+}
 .primerarticulo .espacioboton {
-  display: block;
+  display: flex;
   border: none;
-  width: 50%;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   background-color: #e3627f;
   color: white;
   font-weight: bold;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 10%;
   cursor: pointer;
-  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 .primerarticulo .espacioboton:hover {
+  transform: scale(1.1);
   color: #121210;
 }
 .primerarticulo .espacioboton:hover a {
@@ -253,19 +279,6 @@ Hoja de estilo de la pagina de inicio*/
 }
 .primerarticulo .espacioboton:hover a {
   border-radius: 5px;
-}
-.primerarticulo .espacioboton {
-  display: flex;
-  margin-top: 25px;
-  gap: 25px;
-}
-.primerarticulo .espacioboton .redes-sociales {
-  margin-top: 25px;
-  display: flex;
-  gap: 25px;
-}
-.primerarticulo .espacioboton .redes-sociales:hover {
-  width: 200px;
 }
 
 .redes-sociales {
@@ -289,7 +302,7 @@ Hoja de estilo de la pagina de inicio*/
 .articulo1 {
   display: flex;
   flex-direction: column;
-  background-color: #B7AF90;
+  background: linear-gradient(to top left, #111110, #978F84);
   justify-content: center;
   margin-bottom: 0px;
   /*segundo articulo Pagina de resumen*/
@@ -409,6 +422,7 @@ Hoja de estilo de la pagina de inicio*/
   align-items: center;
   padding-bottom: 15px;
   padding: 2rem;
+  background: linear-gradient(to top left, #111110, #978F84);
 }
 .articulo1 .articulo3 h2 {
   margin-left: 15px;
@@ -449,7 +463,7 @@ Hoja de estilo de la pagina de inicio*/
   .seccion1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .articulo1 h2 {
@@ -688,7 +702,7 @@ Hoja de estilo de la pagina de inicio*/
   }
 }
 /*General*/
-body.codycontacto {
+body {
   background-color: #121210;
 }
 

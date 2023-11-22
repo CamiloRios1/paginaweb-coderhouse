@@ -2,21 +2,22 @@
 @mixin boton()
 
 {
-    display:block;
+    display:flex;
     border:none;
-    width:50%;
     justify-content: center;
     align-items: center;
     border-radius:5px;
     background-color:#e3627f;
     color:white;
     font-weight:bold;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 10%;
     cursor:pointer;
-    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
 
         &:hover
         {
+            transform: scale(1.1);
             color: $color-6;
             a
             {
@@ -24,3 +25,4 @@
             }
         }
 }
+
